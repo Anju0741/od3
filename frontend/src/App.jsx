@@ -11,7 +11,10 @@ export default function App() {
   return (
     <Routes>
       {/* Public routes */}
-      
+      <Route
+      path="/"
+  element={<Analysis />}
+/>
       <Route
         path="/"
         element={token ? <Navigate to="/home" /> : <Login />}
